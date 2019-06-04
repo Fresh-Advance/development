@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  apache:
+    image: httpd:2.4-alpine
+    volumes:
+      - ./source:/var/www/html
+      - ./containers/httpd/httpd.conf:/usr/local/apache2/conf/httpd.conf
+    depends_on:
+      - php
+    ports:
+      - 80:80
+
+  php:
+    build: containers/php-fpm
+    volumes:
+      - ./source:/var/www/html
