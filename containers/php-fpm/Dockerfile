@@ -7,8 +7,8 @@ ARG HOST_USER_NAME
 ARG HOST_GROUP_ID
 ARG HOST_GROUP_NAME
 
-ARG RUNTIME_PACKAGE_DEPS="ssmtp libfreetype6 libjpeg62-turbo unzip git mysql-client sudo rsync liblz4-tool"
-ARG BUILD_PACKAGE_DEPS="libcurl4-openssl-dev libjpeg-dev libpng-dev libxml2-dev libzip-dev"
+ARG RUNTIME_PACKAGE_DEPS="ssmtp libfreetype6 libjpeg62-turbo unzip git mysql-client sudo rsync liblz4-tool libzip-dev"
+ARG BUILD_PACKAGE_DEPS="libcurl4-openssl-dev libjpeg-dev libpng-dev libxml2-dev"
 ARG PHP_EXT_DEPS="curl json xml mbstring zip bcmath soap pdo_mysql gd mysqli"
 ARG PHP_MEMORY_LIMIT="-1"
 
