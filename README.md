@@ -17,3 +17,22 @@ cd myProjectName
 ./build.sh
 docker-compose up --build -d
 ```
+
+## Running php stuff
+
+Call commands directly on the container:
+```
+docker-compose run php php -v
+```
+
+Login to the container, and run the commands from inside:
+```
+docker-compose exec php bash
+php -v
+```
+
+## Running npm commands
+
+```
+docker-compose run node npm install bootstrap
+```
