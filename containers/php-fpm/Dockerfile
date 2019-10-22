@@ -1,6 +1,7 @@
 FROM php:7.3-fpm
 
 COPY xdebug.ini /tmp/xdebug.ini
+COPY user.ini /tmp/user.ini
 
 ARG HOST_USER_ID
 ARG HOST_USER_NAME
@@ -20,7 +21,8 @@ RUN apt-get update -y \
     && docker-php-ext-configure gd --with-jpeg-dir=/usr/local/ \
     && docker-php-ext-install -j$(nproc) $PHP_EXT_DEPS \
     && pecl install xdebug \
-    && mv /tmp/xdebug.ini /usr/local/etc/php/conf.d/20-xdebug.ini \
+    && mv /tmp/xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini \
+    && mv /tmp/user.ini /usr/local/etc/php/conf.d/user.ini \
     && apt-get clean \
     && apt-get autoremove -y \
     && apt-get purge -y --auto-remove $BUILD_PACKAGE_DEPS \
