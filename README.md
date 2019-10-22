@@ -1,4 +1,4 @@
-# Development
+# Development base
 
 Docker based local development environment 
 
@@ -6,7 +6,10 @@ Docker based local development environment
 
 For the start:
 
-Preconfigured Apache 2.4 + PHP 7.3 fpm + MySQL 5.7 with adminer
+* Apache 2.4 
+* PHP 7.3 fpm with xDebug, remote debuggind and error reporting enabled
+* MySQL 5.7 with adminer
+* Npm
 
 ## Quick start
 
@@ -17,6 +20,10 @@ cd myProjectName
 ./build.sh
 docker-compose up --build -d
 ```
+
+Access the website through the http://localhost
+
+Adminer is available via http://localhost:8080
 
 ## Running php stuff
 
