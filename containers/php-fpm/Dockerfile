@@ -8,7 +8,7 @@ ARG HOST_USER_NAME
 ARG HOST_GROUP_ID
 ARG HOST_GROUP_NAME
 
-ARG RUNTIME_PACKAGE_DEPS="ssmtp libfreetype6 libjpeg62-turbo unzip git mysql-client sudo rsync liblz4-tool libzip-dev"
+ARG RUNTIME_PACKAGE_DEPS="msmtp libfreetype6 libjpeg62-turbo unzip git mariadb-client sudo rsync liblz4-tool libzip-dev"
 ARG BUILD_PACKAGE_DEPS="libcurl4-openssl-dev libjpeg-dev libpng-dev libxml2-dev"
 ARG PHP_EXT_DEPS="curl json xml mbstring zip bcmath soap pdo_mysql gd mysqli"
 ARG PHP_MEMORY_LIMIT="-1"
@@ -28,9 +28,9 @@ RUN apt-get update -y \
     && apt-get purge -y --auto-remove $BUILD_PACKAGE_DEPS \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
 
-
 # set sendmail for php to ssmtp
-RUN echo "sendmail_path=/usr/sbin/ssmtp -t" > /usr/local/etc/php/conf.d/php-sendmail.ini
+RUN echo "sendmail_path=/usr/bin/msmtp -t" > /usr/local/etc/php/conf.d/php-sendmail.ini
+RUN printf "host mailhog\nport 1025" >> /etc/msmtprc
 
 # remove memory limit
 RUN echo "memory_limit = $PHP_MEMORY_LIMIT" > /usr/local/etc/php/conf.d/memory-limit-php.ini
