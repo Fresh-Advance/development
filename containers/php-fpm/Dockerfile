@@ -10,7 +10,7 @@ ARG HOST_GROUP_NAME
 
 ARG RUNTIME_PACKAGE_DEPS="msmtp libfreetype6 libjpeg62-turbo unzip git mariadb-client sudo rsync liblz4-tool libzip-dev"
 ARG BUILD_PACKAGE_DEPS="libcurl4-openssl-dev libjpeg-dev libpng-dev libxml2-dev"
-ARG PHP_EXT_DEPS="curl json xml mbstring zip bcmath soap pdo_mysql gd mysqli"
+ARG PHP_EXT_DEPS="curl json xml mbstring zip bcmath soap pdo_mysql gd mysqli intl"
 ARG PHP_MEMORY_LIMIT="-1"
 
 # install dependencies and cleanup (needs to be one step, as else it will cache in the laver)
