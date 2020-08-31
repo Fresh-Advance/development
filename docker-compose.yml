@@ -3,13 +3,11 @@ version: '3.7'
 services:
 
   apache:
-    image: httpd:2.4-alpine
+    build:
+      context: containers/httpd
     working_dir: /var/www/
     volumes:
       - ./source:/var/www
-      - ./containers/httpd/httpd.conf:/usr/local/apache2/conf/httpd.conf
-    depends_on:
-      - php
     ports:
       - 80:80
 
