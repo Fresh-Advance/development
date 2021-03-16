@@ -11,14 +11,19 @@ For the start:
 * MySQL 5.7 with adminer
 * Npm
 
+## Requirements
+
+* Docker (https://docs.docker.com/get-docker/)
+* Docker compose (https://docs.docker.com/compose/install/)
+
 ## Quick start
 
 ```
 git clone https://github.com/Sieg/development.git myProjectName
 cd myProjectName
 
-./build.sh
-docker-compose up --build -d
+make setup
+make up
 ```
 
 Access the website through the http://localhost
