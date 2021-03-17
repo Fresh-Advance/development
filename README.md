@@ -27,8 +27,16 @@ make up
 ```
 
 Access the website through the http://localhost
+* phpinfo shown on index page
+* example with database connection
+* example with email sending and catching it with mailhog
+    * run the composer install on php container first.
 
 Adminer is available via http://localhost:8080
+* Server: mysql
+* Credentials: root/root
+
+Mailhog is available via http://localhost:8025/
 
 ## Running php stuff
 

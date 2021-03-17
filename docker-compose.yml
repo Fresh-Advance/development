@@ -23,6 +23,9 @@ services:
       - ./source:/var/www
       - ./data/php:/var/sync
     user: ${HOST_USER_ID}:${HOST_GROUP_ID}
+    depends_on:
+      - mysql
+      - mailhog
 
   mysql:
     image: mysql:5.7
@@ -37,6 +40,14 @@ services:
       - 8080:8080
     depends_on:
       - mysql
+
+  mailhog:
+    image: mailhog/mailhog
+    logging:
+      driver: 'none'  # disable saving logs
+    ports:
+      - 1025:1025 # smtp server
+      - 8025:8025 # web ui
 
   node:
     image: "node:8"

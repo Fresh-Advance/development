@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [v1.2.0] - Unreleased
 
+### Added
+- Mailhog container preconfigured in docker-compose
+- Example with php sending email added
+
 ### Changed
 - Reconfigured php log and profiler paths to be always available and no additional configuration required. Available in data/php directory.
 
