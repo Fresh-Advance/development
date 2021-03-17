@@ -21,6 +21,7 @@ services:
         HOST_GROUP_NAME: ${HOST_GROUP_NAME}
     volumes:
       - ./source:/var/www
+      - ./data/php:/var/sync
     user: ${HOST_USER_ID}:${HOST_GROUP_ID}
 
   mysql:
