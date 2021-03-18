@@ -27,3 +27,6 @@ up:
 
 down:
 	docker-compose down
+
+php:
+	docker-compose exec php bash
