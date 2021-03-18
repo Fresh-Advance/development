@@ -55,6 +55,12 @@ docker-compose exec php bash
 php -v
 ```
 
+Alternatively:
+```
+make php
+php -v
+```
+
 ## Running npm commands
 
 ```
