@@ -66,3 +66,7 @@ php -v
 ```
 docker-compose run node npm install bootstrap
 ```
+
+## Contributing
+
+You like to contribute? 🙌 AWESOME 🙌 Throw a pull request, with the description why you/we need it and instructions how to test it out :)
