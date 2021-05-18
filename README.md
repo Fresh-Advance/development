@@ -42,6 +42,8 @@ Adminer is available via http://localhost:8080
 
 Mailhog is available via http://localhost:8025/
 
+SPX preconfigured and UI accessible via http://localhost?SPX_KEY=dev&SPX_UI_URI=/
+
 ## Running php stuff
 
 Call commands directly on the container:
