@@ -69,6 +69,11 @@ php -v
 docker-compose run node npm install bootstrap
 ```
 
+## Inspired by OXID :)
+* https://github.com/OXID-eSales/oxvm_base
+* https://github.com/OXID-eSales/oxvm_eshop
+* https://github.com/OXID-eSales/docker-eshop-sdk
+
 ## Contributing
 
 You like to contribute? 🙌 AWESOME 🙌 Throw a pull request, with the description why you/we need it and instructions how to test it out :)
