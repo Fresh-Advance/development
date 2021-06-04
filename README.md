@@ -13,6 +13,7 @@ For the start:
    * error reporting enabled
 * MySQL 5.7 with adminer
 * Mailhog preconfigured to catch outgoing emails
+* SPX preconfigured (PHP Simple Profiler - https://github.com/NoiseByNorthwest/php-spx)
 * Npm
 
 ## Requirements
