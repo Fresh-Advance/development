@@ -20,6 +20,7 @@ setup:
 		 	 s/<groupId>/$(GROUPID)/;\
 		 	 s/<groupName>/$(GROUPNAME)/"\
 		> .env
+	@cp -n containers/httpd/project.conf.dist containers/httpd/project.conf
 	@echo "Setup done! Proceed with \e[1;1;32mmake up\e[0m"
 
 up:
