@@ -11,7 +11,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Rename project.conf to project.conf.dist
-- Updated the php-fpm image, so it have composer version 2 now by default
+- Updated the php-fpm image, so it have:
+  - composer version 2
+  - xDebug 3
+
+### Fixed
+- Configure remote debugging on xDebug 3
 
 ## [v1.3.0] - 2021-06-04
 

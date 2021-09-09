@@ -7,10 +7,10 @@ Docker based local development environment. Php and Npm users are synced with th
 For the start:
 
 * Apache 2.4 
-* PHP 7.4 fpm with: 
-   * xDebug preconfigured with profiler preconfigured
-   * remote debuggind preconfigured
-   * error reporting enabled
+* PHP 7.4 fpm with:
+  * composer 2
+  * xDebug 3 with remote debug and profiler preconfigured
+  * error reporting enabled
 * MySQL 5.7 with adminer
 * Mailhog preconfigured to catch outgoing emails
 * SPX preconfigured (PHP Simple Profiler - https://github.com/NoiseByNorthwest/php-spx)
