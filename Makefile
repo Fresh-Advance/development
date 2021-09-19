@@ -31,3 +31,6 @@ down:
 
 php:
 	docker-compose exec php bash
+
+node:
+	docker-compose run node bash

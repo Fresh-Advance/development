@@ -66,8 +66,14 @@ php -v
 
 ## Running npm commands
 
+### Direct call
 ```
 docker-compose run node npm install bootstrap
+```
+
+### Connect to node container
+```
+make node
 ```
 
 ## Inspired by OXID :)
