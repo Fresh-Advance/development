@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 - Copy ``containers/httpd/project.conf.dist`` to ``containers/httpd/project.conf`` during ``make setup``
+- Copy ``docker-compose.yml.dist`` to ``docker-compose.yml`` during ``make setup``
 
 ### Changed
 - Rename project.conf to project.conf.dist
@@ -17,6 +18,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 - Configure remote debugging on xDebug 3
+- Fix wrong rights on volume synced directory in home of php container
 
 ## [v1.3.0] - 2021-06-04
 
