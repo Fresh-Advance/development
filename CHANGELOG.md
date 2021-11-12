@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 - Configure remote debugging on xDebug 3
 - Fix wrong rights on volume synced directory in home of php container
+- Update default server for adminer
 
 ## [v1.3.0] - 2021-06-04
 
