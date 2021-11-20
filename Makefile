@@ -34,4 +34,4 @@ php:
 	docker-compose exec php bash
 
 node:
-	docker-compose run node bash
+	docker-compose run --rm node bash

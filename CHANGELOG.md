@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [v1.4.0] - 2021-11-19
+## [v1.4.0] - 2021-11-20
 
 ### Added
 - Copy ``containers/httpd/project.conf.dist`` to ``containers/httpd/project.conf`` during ``make setup``
@@ -15,11 +15,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Updated the php-fpm image, so it have:
   - composer version 2
   - xDebug 3
+- Use node latest
 
 ### Fixed
 - Configure remote debugging on xDebug 3
 - Fix wrong rights on volume synced directory in home of php container
 - Update default server for adminer
+- Remove node container after use
 
 ## [v1.3.0] - 2021-06-04
 
