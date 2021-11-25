@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [v1.5.0] - Unreleased
+
+### Added
+- Register a link to apache container for the php container (so its possible to ping one by url)
+
 ## [v1.4.0] - 2021-11-20
 
 ### Added
@@ -51,6 +56,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [v1.0.0] - 2019-10-23
 
+[v1.5.0]: https://github.com/Sieg/development/compare/v1.4.0...master
 [v1.4.0]: https://github.com/Sieg/development/compare/v1.3.0...v1.4.0
 [v1.3.0]: https://github.com/Sieg/development/compare/v1.2.0...v1.3.0
 [v1.2.0]: https://github.com/Sieg/development/compare/v1.1.0...v1.2.0

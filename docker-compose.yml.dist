@@ -19,6 +19,8 @@ services:
         HOST_GROUP_ID: ${HOST_GROUP_ID}
         HOST_USER_NAME: ${HOST_USER_NAME}
         HOST_GROUP_NAME: ${HOST_GROUP_NAME}
+    links:
+      - "apache:localhost.local"
     volumes:
       - ./source:/var/www
       - ./data/php:/var/sync
