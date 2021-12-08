@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Register a link to apache container for the php container (so its possible to ping one by url)
 
+### Fixed
+- Fix wrong rights for ~/.composer directory. Now composer commands will work properly.
+
 ## [v1.4.0] - 2021-11-20
 
 ### Added
