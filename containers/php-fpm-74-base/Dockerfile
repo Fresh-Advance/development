@@ -28,3 +28,7 @@ RUN echo "memory_limit = $PHP_MEMORY_LIMIT" > /usr/local/etc/php/conf.d/memory-l
 # install latest composer
 RUN curl --silent --show-error https://getcomposer.org/installer | php && \
     mv /var/www/html/composer.phar /usr/local/bin/composer
+
+# install spx
+RUN cd /usr/lib && git clone https://github.com/NoiseByNorthwest/php-spx.git
+RUN cd /usr/lib/php-spx && phpize && ./configure && make && make install

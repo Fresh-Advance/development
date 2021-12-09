@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Register a link to apache container for the php container (so its possible to ping one by url)
 
+### Changed
+- Move SPX package installation to base php container. 
+  - Base php container rebuilt with version 1.1.0
+  - It will allow faster start of the environment.
+
 ### Fixed
 - Fix wrong rights for ~/.composer directory. Now composer commands will work properly.
 
