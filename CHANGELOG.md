@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Move SPX package installation to base php container. 
   - Base php container rebuilt with version 1.1.0
   - It will allow faster start of the environment.
+- ``containers/php-fpm/user.ini`` is renamed to custom.ini.dist. Setup copies it to custom.ini 
 
 ### Fixed
 - Fix wrong rights for ~/.composer directory. Now composer commands will work properly.
