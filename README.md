@@ -27,6 +27,9 @@ For the start:
 git clone https://github.com/Sieg/development.git myProjectName
 cd myProjectName
 
+# get some information about whats possible
+make help
+
 make setup
 make up
 ```
@@ -75,6 +78,16 @@ docker-compose run node npm install bootstrap
 ```
 make node
 ```
+
+## Configurations
+
+### Apache
+
+Custom configuration file: ``containers/httpd/project.conf``
+
+### PHP
+
+Custom configuration file: ``containers/php-fpm/custom.ini``
 
 ## Inspired by OXID :)
 * https://github.com/OXID-eSales/oxvm_base
