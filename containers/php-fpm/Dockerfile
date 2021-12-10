@@ -1,4 +1,4 @@
-FROM siegfuse/php-fpm-74-base:v1.1.0
+FROM siegfuse/php-fpm-80-base:latest
 
 ARG HOST_USER_ID
 ARG HOST_USER_NAME

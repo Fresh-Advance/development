@@ -7,7 +7,7 @@ Docker based local development environment. Php and Npm users are synced with th
 For the start:
 
 * Apache 2.4 
-* PHP 7.4 fpm with:
+* PHP 7.4 / 8.0 fpm with:
   * composer 2
   * xDebug 3 with remote debug and profiler preconfigured
   * error reporting enabled
