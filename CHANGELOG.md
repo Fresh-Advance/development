@@ -11,8 +11,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Register a link to apache container for the php container (so its possible to ping one by url)
 
 ### Changed
+- Base container repositories renamed to siegfuse/php-fpm-X.X-base where (X.X is php version)
+- ``latest`` tag of base container is used by default
 - Move SPX package installation to base php container. 
-  - Base php container rebuilt with version 1.1.0
+  - 7.4 base container rebuilt with latest dependencies and spx.
   - It will allow faster start of the environment.
 - ``containers/php-fpm/user.ini`` is renamed to custom.ini.dist. Setup copies it to custom.ini 
 
