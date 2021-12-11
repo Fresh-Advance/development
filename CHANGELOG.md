@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [v1.5.0] - Unreleased
 
 ### Added
-- PHP 8.0 container!
+- PHP 8.0 and PHP 8.1 containers!
 - Register a link to apache container for the php container (so its possible to ping one by url)
 
 ### Changed
