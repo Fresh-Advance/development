@@ -15,7 +15,7 @@ services:
     build:
       context: containers/php-fpm
       args:
-        PHP_VERSION: '8.1'
+        PHP_VERSION: '8.0'
         HOST_USER_ID: ${HOST_USER_ID}
         HOST_GROUP_ID: ${HOST_GROUP_ID}
         HOST_USER_NAME: ${HOST_USER_NAME}
