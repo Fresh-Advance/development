@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [v2.1.0] - Unreleased
+
+### Added
+- PHP_VERSION as environment variable
+
 ## [v2.0.0] - 2021-12-12
 
 ### Added
@@ -68,6 +73,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [v1.0.0] - 2019-10-23
 
+[v2.1.0]: https://github.com/Sieg/development/compare/v2.0.0...v2.1.0
 [v2.0.0]: https://github.com/Sieg/development/compare/v1.4.0...v2.0.0
 [v1.4.0]: https://github.com/Sieg/development/compare/v1.3.0...v1.4.0
 [v1.3.0]: https://github.com/Sieg/development/compare/v1.2.0...v1.3.0
