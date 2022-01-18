@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - PHP_VERSION as environment variable
 
+### Changed
+- Example files moved to `examples` directory
+  - Files will be copied once during the setup, if source directory does not exist.
+
 ## [v2.0.0] - 2021-12-12
 
 ### Added
