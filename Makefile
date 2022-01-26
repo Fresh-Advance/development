@@ -28,7 +28,7 @@ setup:
 	@cp -n containers/httpd/project.conf.dist containers/httpd/project.conf
 	@cp -n containers/php-fpm/custom.ini.dist containers/php-fpm/custom.ini
 	@cp -n docker-compose.yml.dist docker-compose.yml
-	@test -d source || (mkdir -p source && cp -rn examples/* source/)
+	@./recipes/default/example/run.sh
 	@echo "Setup done! Proceed with \e[1;1;32mmake up\e[0m"
 
 up:

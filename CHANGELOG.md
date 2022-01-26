@@ -8,9 +8,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 - PHP_VERSION as environment variable
+- Example recipe to install example scripts :) The idea is to create multiple different recipes in the future
 
 ### Changed
-- Example files moved to `examples` directory
+- Example files moved to `recipes/default/examples` directory
   - Files will be copied once during the setup, if source directory does not exist.
 
 ## [v2.0.0] - 2021-12-12
