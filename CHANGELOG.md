@@ -9,10 +9,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - PHP_VERSION as environment variable
 - Example recipe to install example scripts :) The idea is to create multiple different recipes in the future
+- Possibility to build specific docker-compose.yml file with console command!
+  - The file can be build by merging separate smaller chunks (services) together
+  - The ``make addservice`` command introduced. Example of usage: ``make file=services/apache.yml addservice``
 
 ### Changed
 - Example files moved to `recipes/default/examples` directory
   - Files will be copied once during the setup, if source directory does not exist.
+- Default docker-compose.yml.dist have been split to multiple service files and moved to services directory
 
 ## [v2.0.0] - 2021-12-12
 
