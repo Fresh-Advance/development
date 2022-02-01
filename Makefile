@@ -27,7 +27,7 @@ setup:
 		> .env
 	@cp -n containers/httpd/project.conf.dist containers/httpd/project.conf
 	@cp -n containers/php-fpm/custom.ini.dist containers/php-fpm/custom.ini
-	@cp -n docker-compose.yml.dist docker-compose.yml
+	@make setupservices
 	@./recipes/default/example/run.sh
 	@echo "Setup done! Proceed with \e[1;1;32mmake up\e[0m"
 
@@ -42,3 +42,14 @@ php:
 
 node:
 	docker-compose run --rm node bash
+
+addservice:
+	@cat $(file) >> docker-compose.yml
+	@echo "\n" >> docker-compose.yml
+	@echo "Service file $(file) contents added\n";
+
+setupservices:
+	@make file=docker-compose.yml.dist addservice
+	@make file=services/apache.yml addservice
+	@make file=services/php.yml addservice
+	@make file=services/mysql.yml addservice

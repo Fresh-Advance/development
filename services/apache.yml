@@ -1,0 +1,11 @@
+  apache:
+    build:
+      context: containers/httpd
+    working_dir: /var/www/
+    volumes:
+      - ./source:/var/www
+    ports:
+      - 80:80
+    depends_on:
+      - php
+      - mysql
