@@ -1,0 +1,27 @@
+  php:
+    build:
+      context: containers/php-fpm
+      args:
+        PHP_VERSION: ${PHP_VERSION}
+        HOST_USER_ID: ${HOST_USER_ID}
+        HOST_GROUP_ID: ${HOST_GROUP_ID}
+        HOST_USER_NAME: ${HOST_USER_NAME}
+        HOST_GROUP_NAME: ${HOST_GROUP_NAME}
+    links:
+      - "apache:localhost.local"
+    volumes:
+      - ./source:/var/www
+      - ./data/php:/var/sync
+      - ./data/composer:/home/${HOST_USER_NAME}/.composer/
+    user: ${HOST_USER_ID}:${HOST_GROUP_ID}
+    depends_on:
+      - mailhog
+      - apache
+
+  mailhog:
+    image: mailhog/mailhog
+    logging:
+      driver: 'none'  # disable saving logs
+    ports:
+      - 1025:1025 # smtp server
+      - 8025:8025 # web ui
