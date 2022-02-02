@@ -36,7 +36,7 @@ up:
 	docker-compose up --build -d
 
 down:
-	docker-compose down
+	docker-compose down --remove-orphans
 
 php:
 	docker-compose exec php bash
