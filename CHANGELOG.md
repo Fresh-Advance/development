@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [v2.1.0] - Unreleased
+## [v3.0.0] - Unreleased
 
 ### Added
 - PHP_VERSION as environment variable
@@ -15,8 +15,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Example files moved to `recipes/default/examples` directory
-  - Files will be copied once during the setup, if source directory does not exist.
+  - Files will be copied during the example recipe - ``make example``.
 - Default docker-compose.yml.dist have been split to multiple service files and moved to services directory
+  - Now, no services are installed by default anymore, but rather, use the ``make addservice`` to add specific services
+  - To add all basic services (php, mysql and apache), the ``make addbasicservices`` command can be used
+
+### Fixed
+- Readme adjusted by latest changes, please, read from the start, again.
 
 ## [v2.0.0] - 2021-12-12
 
