@@ -6,6 +6,8 @@
       MYSQL_ROOT_PASSWORD: root
     volumes:
       - ./data/mysql:/var/lib/mysql
+    ports:
+      - 3306:3306 # to access mysql with local client
 
   adminer:
     image: adminer
