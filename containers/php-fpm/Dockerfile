@@ -1,6 +1,6 @@
 ARG PHP_VERSION
 
-FROM siegfuse/php-fpm-${PHP_VERSION}-base:latest
+FROM siegfuse/php-fpm-base:${PHP_VERSION}
 
 ARG HOST_USER_ID
 ARG HOST_USER_NAME
