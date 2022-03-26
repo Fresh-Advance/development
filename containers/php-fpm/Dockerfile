@@ -16,4 +16,7 @@ RUN groupadd -f -g $HOST_GROUP_ID $HOST_GROUP_NAME && \
     echo "$HOST_USER_NAME  ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
     chown -R $HOST_USER_NAME.$HOST_GROUP_NAME /var/www/
 
+RUN mkdir /home/$HOST_USER_NAME/.ssh && \
+    ssh-keyscan -t rsa github.com >> /home/$HOST_USER_NAME/.ssh/known_hosts
+
 WORKDIR /var/www/

@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 - Expose mysql port for local client access
+- Github is trusted by default
 
 ## [v3.0.0] - 2022-02-04
 
