@@ -27,17 +27,10 @@ For the start:
 ## Quick start
 
 ```
-git clone https://github.com/Sieg/development.git myProjectName
-cd myProjectName
-
-# get some information about whats possible
-make help
-
-# setup rights and basic configuration files
-make setup
+echo myProjectName && git clone https://github.com/Sieg/development.git $_ && cd $_
 
 # run example script which prepares several example files for you to see this environment functionality
-make example
+./recipes/default/example/run.sh
 ```
 
 Access the website through the http://localhost.local
@@ -59,8 +52,8 @@ SPX preconfigured and UI accessible via http://localhost.local?SPX_KEY=dev&SPX_U
 This example shows more precise configuration which can be used for your project. It is real usage flow:
 
 ```
-git clone https://github.com/Sieg/development.git myProjectName
-cd myProjectName
+# clone the development environment to myProjectName directory
+echo myProjectName && git clone https://github.com/Sieg/development.git $_ && cd $_
 
 # setup rights and basic configuration files
 make setup

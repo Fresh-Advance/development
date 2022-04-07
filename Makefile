@@ -32,8 +32,14 @@ setup:
 	@cp -n docker-compose.yml.dist docker-compose.yml
 	@echo "Setup done! Add basic services with \e[1;1;32mmake addbasicservices\e[0m and start everything \e[1;1;32mmake up\e[0m"
 
+reset:
+	@rm .env
+	@rm containers/httpd/project.conf
+	@rm containers/php-fpm/custom.ini
+	@rm docker-compose.yml
+	@echo "Reset done."
+
 example:
-	@make addbasicservices
 	@./recipes/default/example/run.sh
 
 up:

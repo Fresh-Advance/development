@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Expose mysql port for local client access
 - Github is trusted by default
+- New command: ``make reset`` - removes all configuration files created by ``make setup``
+
+### Changed
+- Images regenerated with one name but separate versions which fits the php version
 
 ## [v3.0.0] - 2022-02-04
 
