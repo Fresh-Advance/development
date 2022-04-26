@@ -14,6 +14,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Images regenerated with one name but separate versions which fits the php version
 
+### Fixed
+- .env file php version default value fixed
+
 ## [v3.0.0] - 2022-02-04
 
 ### Added
