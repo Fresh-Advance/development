@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [v3.1.0] - Unreleased
+## [v3.1.0] - 2022-08-07
 
 ### Added
 - Expose mysql port for local client access
@@ -16,6 +16,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 - .env file php version default value fixed
+- Improve client host calculation to work by default on Windows and Mac systems
+- Use debian based mysql containers, as new ones goes with different configurations, most likely something will not fit, needs further improvements.
 
 ## [v3.0.0] - 2022-02-04
 
@@ -100,6 +102,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [v1.0.0] - 2019-10-23
 
+[v3.1.0]: https://github.com/Sieg/development/compare/v3.0.0...v3.1.0
 [v3.0.0]: https://github.com/Sieg/development/compare/v2.0.0...v3.0.0
 [v2.0.0]: https://github.com/Sieg/development/compare/v1.4.0...v2.0.0
 [v1.4.0]: https://github.com/Sieg/development/compare/v1.3.0...v1.4.0
