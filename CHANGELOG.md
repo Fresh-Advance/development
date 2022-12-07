@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [v3.2.0] - Unreleased
+
+### Changed
+- Do not cache local .user.ini values
+
 ## [v3.1.0] - 2022-08-07
 
 ### Added
@@ -102,6 +107,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [v1.0.0] - 2019-10-23
 
+[v3.2.0]: https://github.com/Sieg/development/compare/v3.1.0...v3.2.0
 [v3.1.0]: https://github.com/Sieg/development/compare/v3.0.0...v3.1.0
 [v3.0.0]: https://github.com/Sieg/development/compare/v2.0.0...v3.0.0
 [v2.0.0]: https://github.com/Sieg/development/compare/v1.4.0...v2.0.0

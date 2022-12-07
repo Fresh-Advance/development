@@ -2,3 +2,5 @@ display_errors = true
 error_reporting = E_ALL
 error_log = /var/sync/logs/error_log.txt
 log_errors = On
+
+user_ini.cache_ttl = 0
