@@ -33,10 +33,12 @@ setup:
 	@echo "Setup done! Add basic services with \e[1;1;32mmake addbasicservices\e[0m and start everything \e[1;1;32mmake up\e[0m"
 
 reset:
+	@make down
 	@rm .env
 	@rm containers/httpd/project.conf
 	@rm containers/php-fpm/custom.ini
 	@rm docker-compose.yml
+	@rm -rf data/mysql/*
 	@echo "Reset done."
 
 example:
