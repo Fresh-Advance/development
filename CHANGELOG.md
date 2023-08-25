@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [v3.2.0] - Unreleased
 
+### Added
+- PHP 8.2 supported
+
 ### Changed
 - Do not cache local .user.ini values
 
