@@ -4,13 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [v3.2.0] - Unreleased
+## [v3.2.0] - 2023-08-25
 
 ### Added
 - PHP 8.2 supported
 
 ### Changed
 - Do not cache local .user.ini values
+- Default PHP version is changed from 8.0 -> 8.1
 
 ## [v3.1.0] - 2022-08-07
 
