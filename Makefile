@@ -45,16 +45,16 @@ example:
 	@./recipes/default/example/run.sh
 
 up:
-	docker-compose up --build -d
+	docker compose up --build -d --wait
 
 down:
-	docker-compose down --remove-orphans
+	docker compose down --remove-orphans
 
 php:
-	docker-compose exec php bash
+	docker compose exec php bash
 
 node:
-	docker-compose run --rm node bash
+	docker compose run --rm node bash
 
 addservice:
 	@cat $(file) >> docker-compose.yml

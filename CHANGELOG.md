@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 - Create "example" database in mysql container by default
+- Wait for services healthy during `make up`
+
+### Changed
+- Switch to docker compose v2
 
 ## [v3.2.0] - 2023-08-25
 
