@@ -3,6 +3,7 @@
     restart: always
     user: ${HOST_USER_ID}:${HOST_GROUP_ID}
     environment:
+      MYSQL_DATABASE: example
       MYSQL_ROOT_PASSWORD: root
     healthcheck:
       test: "/usr/bin/mysql --user=root --password=root --execute \"SHOW DATABASES;\""
