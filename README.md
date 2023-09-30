@@ -120,7 +120,7 @@ Custom configuration file for php settings: ``containers/php-fpm/custom.ini``.
 * Configure the CLI Interpreter
 * Create a Server configuration and set mapping as source:/var/www/ 
 
-## Inspired by OXID :)
+## Inspired by OXID, but also used by OXID! :)
 * https://github.com/OXID-eSales/oxvm_base
 * https://github.com/OXID-eSales/oxvm_eshop
 * https://github.com/OXID-eSales/docker-eshop-sdk
