@@ -15,7 +15,7 @@ For the start:
 * MySQL 5.7(any other version can be easily used) with adminer (original mysql container used)
 * Mailhog preconfigured to catch outgoing emails
 * SPX preconfigured (PHP Simple Profiler - https://github.com/NoiseByNorthwest/php-spx)
-* Npm container preconfigured (based on node:latest)
+* Npm container preconfigured, so you can easily regenerate grunt/gulp/other builder assets for modules/themes easier (based on node:latest)
 * Chrome based selenium service available, for running your selenium tests (based on selenium/standalone-chrome-debug)
 
 ## Requirements
