@@ -13,6 +13,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Switch to docker compose v2
 
+### Fixed
+- Improve `make reset` to remove "source" directory, as its used in all examples
+
 ## [v3.2.0] - 2023-08-25
 
 ### Added
