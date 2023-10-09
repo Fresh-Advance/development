@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [v3.3.0] - Unreleased
+## [v4.0.0] - 2023-10-09
 
 ### Added
 - Create "example" database in mysql container by default
@@ -124,7 +124,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [v1.0.0] - 2019-10-23
 
-[v3.3.0]: https://github.com/Sieg/development/compare/v3.2.0...v3.3.0
+[v4.0.0]: https://github.com/Sieg/development/compare/v3.2.0...v4.0.0
 [v3.2.0]: https://github.com/Sieg/development/compare/v3.1.0...v3.2.0
 [v3.1.0]: https://github.com/Sieg/development/compare/v3.0.0...v3.1.0
 [v3.0.0]: https://github.com/Sieg/development/compare/v2.0.0...v3.0.0
