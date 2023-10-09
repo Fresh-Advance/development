@@ -26,15 +26,21 @@ For the start:
 
 ## Quick start
 
-Create a directory (currently `myProjectName`) and clone this development base
+#### 1. Prepare the project directory
+
+Run this command to Create a directory (currently `myProjectName`) and clone this development base:
 ```
 echo myProjectName && git clone https://github.com/Sieg/development.git $_ && cd $_
 ```
+
+#### 2. Environment example
 
 Run example script which prepares several example files for you to see this environment functionality
 ```
 ./recipes/default/example/run.sh
 ```
+
+#### 3. Brief description whats available now:
 
 Access the website through the http://localhost.local
 * phpinfo shown on index page
@@ -72,6 +78,8 @@ mkdir source
 
 # start everything
 make up
+
+.... Now everything is up and ready for work ....
 
 # stop everything when its enough :)
 make down
@@ -119,6 +127,16 @@ Custom configuration file for php settings: ``containers/php-fpm/custom.ini``.
 
 * Configure the CLI Interpreter
 * Create a Server configuration and set mapping as source:/var/www/ 
+
+## Recipes
+
+Recipes directory contains very simple scripts that can be used for fast start 
+of certain preconfigured environments:
+
+* `default/example` - is installing basic environment example that is described in "Quick start" section
+* `default/phpunit` - is a preinstalled PHPUnit installation, so TDD kata's can be practiced
+  * The `docker-compose exec php composer tests-coverage` command, runs tests. 
+  * Also `make php` and then `composer tests-coverage` or `composer tests-unit` can be used
 
 ## Inspired by OXID, but also used by OXID! :)
 * https://github.com/OXID-eSales/oxvm_base
