@@ -1,0 +1,17 @@
+{
+    "name": "root/www",
+    "require": {
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Root\\Module\\": "src/",
+            "Root\\Module\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "tests-unit": "XDEBUG_MODE=coverage vendor/bin/phpunit --config=tests/",
+        "tests-coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-text --config=tests/ --coverage-html=coverage"
+    }
+}
