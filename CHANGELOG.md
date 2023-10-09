@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Create "example" database in mysql container by default
 - Wait for services healthy during `make up`
+- New recipe - "phpunit" allows fast start with preconfigured phpunit
 
 ### Changed
 - Switch to docker compose v2
