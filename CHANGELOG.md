@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Default mysql container version is changed from 5.7-debian -> 8.0-debian, and its configurable in .env file
 
+### Fixed
+- Recipes converted to docker compose v2, as this part was still using the first version
+
 ## [v4.0.0] - 2023-10-09
 
 ### Added

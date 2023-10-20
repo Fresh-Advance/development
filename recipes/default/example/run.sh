@@ -11,6 +11,6 @@ test -d $ROOT_PATH/source || (mkdir -p $ROOT_PATH/source && cp -r $SCRIPT_PATH/e
 
 make up
 
-docker-compose exec -T php composer update --no-interaction
+docker compose exec -T php composer update --no-interaction
 
 echo "Done!"
