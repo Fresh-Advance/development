@@ -1,0 +1,24 @@
+name: Regenerate containers
+
+on: [ push ]
+
+jobs:
+  install_shop_with_module:
+    strategy:
+      matrix:
+        php: [ '8.0' ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current module
+        uses: actions/checkout@v4
+        with:
+          path: ./
+
+      - name: Prepare image
+        run: |
+          cd containers/php-fpm-${{ matrix.php }}-base
+          docker build -t siegfuse/php-fpm-base:${{ matrix.php }} .
+
+      - name: Check images list
+        run: |
+          docker images
