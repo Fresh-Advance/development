@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [v4.1.0] - Unreleased
+## [v4.1.0] - 2024-03-27
 
 ### Added
 - `MYSQL_VERSION` environment variable to .env file
@@ -136,6 +136,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [v1.0.0] - 2019-10-23
 
+[v4.1.0]: https://github.com/Sieg/development/compare/v4.0.0...v4.1.0
 [v4.0.0]: https://github.com/Sieg/development/compare/v3.2.0...v4.0.0
 [v3.2.0]: https://github.com/Sieg/development/compare/v3.1.0...v3.2.0
 [v3.1.0]: https://github.com/Sieg/development/compare/v3.0.0...v3.1.0
