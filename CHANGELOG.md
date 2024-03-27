@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 - `MYSQL_VERSION` environment variable to .env file
+- PHP images regenerated weekly to use the latest updated official php-fpm bases
 
 ### Changed
 - Default mysql container version is changed from 5.7-debian -> 8.0-debian, and its configurable in .env file
