@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [v4.1.1] - Unreleased
+
+### Fixed
+- Remove obsolete "version" option from docker-compose.yml.dist file
+
 ## [v4.1.0] - 2024-03-27
 
 ### Added
@@ -136,6 +141,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [v1.0.0] - 2019-10-23
 
+[v4.1.1]: https://github.com/Sieg/development/compare/v4.1.0...v4.1.1
 [v4.1.0]: https://github.com/Sieg/development/compare/v4.0.0...v4.1.0
 [v4.0.0]: https://github.com/Sieg/development/compare/v3.2.0...v4.0.0
 [v3.2.0]: https://github.com/Sieg/development/compare/v3.1.0...v3.2.0
