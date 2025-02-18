@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [v4.2.0] - Unreleased
 
 ### Added
-- PHP 8.3 supported
+- PHP 8.3 and 8.4 supported
 
 ### Changed
 - Use 8.3 as default PHP version
